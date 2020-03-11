@@ -1,4 +1,5 @@
 .main {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
 }
@@ -6,6 +7,7 @@
 .main__left {
   background-color: #1f1e1e;
   height: 100vh;
+  grid-column: 1/2;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -103,11 +105,82 @@
 }
 
 .main__middle-nav-top {
-  color: #a8a6a6;
+  grid-column: 2/3;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
   background-color: transparent;
   position: fixed;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-direction: row;
+  margin-top: 10px;
+}
+
+.back-icon {
+  font-size: 25px;
+  color: #a8a6a6;
+  margin-left: 30px;
+}
+.back-icon:hover {
+  color: white;
+}
+
+.forward-icon {
+  font-size: 25px;
+  color: #a8a6a6;
+  margin-left: 20px;
+}
+.forward-icon:hover {
+  color: white;
+}
+
+.search {
+  max-width: 150px;
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid black;
+  color: black;
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-left: 10px;
+}
+
+.main__left-middle-nav-right {
+  grid-column: 2/3;
+  width: 50%;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.profile {
+  color: #a8a6a6;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+.profile:hover {
+  color: white;
+  text-decoration: underline;
+  background-color: black;
+}
+
+.profile-pic {
+  font-size: 40px;
+}
+
+.down-icon {
+  font-size: 25px;
+  color: #a8a6a6;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+.down-icon:hover {
+  color: white;
 }
