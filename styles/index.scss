@@ -107,3 +107,13 @@ $hover-text-color: rgb(255, 255, 255);
         color: $hover-text-color;
     }
 }
+
+.main__middle-nav-top {
+    color: $text-color;
+    background-color: transparent;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row;
+}

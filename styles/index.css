@@ -101,3 +101,13 @@
 .nav__text:hover {
   color: white;
 }
+
+.main__middle-nav-top {
+  color: #a8a6a6;
+  background-color: transparent;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: row;
+}
