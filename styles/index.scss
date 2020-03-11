@@ -1,5 +1,109 @@
-$color:#fff;
+$main-font: 'Montserrat', sans-serif;
+$side-color: rgb(31, 30, 30); 
+$text-color: rgb(168, 166, 166); 
+$hover-text-color: rgb(255, 255, 255); 
 
-body {
-    background-color: $color;
+.main {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.main__left {
+    background-color: $side-color;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.dots-icon {
+    font-size: 20px;
+    color: $text-color;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.nav__top {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.nav__top>a {
+    color: $text-color;
+    font-family: $main-font;
+    text-decoration: none;
+    &:hover {
+        color: $hover-text-color;
+    }
+}
+
+
+.home-icon {
+    font-size: 20px;
+    color: $text-color;
+    padding-right: 10px;
+    &:hover {
+        color: $hover-text-color;
+    } 
+}
+
+.browse-icon {
+    font-size: 20px;
+    color: $text-color;
+    padding-right: 10px;
+    &:hover {
+        color: $hover-text-color;
+    }
+}
+
+.radio-icon {
+    font-size: 20px;
+    color: $text-color;
+    padding-right: 10px;
+    &:hover {
+        color: $hover-text-color;
+    }
+}
+
+.main__left-middle-nav {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.nav__title {
+    color: $text-color;
+    font-family: $main-font;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.nav__text--bold {
+    color: $text-color;
+    font-family: $main-font;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 2;
+    &:hover {
+        color: $hover-text-color;
+    }
+}
+
+.main__left-bottom-nav {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.nav__text {
+    color: $text-color;
+    font-family: $main-font;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 2;
+    &:hover {
+        color: $hover-text-color;
+    }
 }
