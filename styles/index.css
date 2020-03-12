@@ -107,7 +107,7 @@
 .main__middle-nav-top {
   grid-column: 2/3;
   width: 100%;
-  height: 100px;
+  height: 50px;
   overflow: hidden;
   background-color: transparent;
   position: fixed;
@@ -115,7 +115,8 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
-  margin-top: 10px;
+  padding-top: 10px;
+  background-color: rgba(31, 30, 30, 0.356);
 }
 
 .back-icon {
@@ -168,7 +169,6 @@
 .profile:hover {
   color: white;
   text-decoration: underline;
-  background-color: black;
 }
 
 .profile-pic {
