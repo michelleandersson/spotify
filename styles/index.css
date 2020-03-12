@@ -114,11 +114,10 @@
 .main__middle {
   grid-column: 2/3;
   background-color: #1f1e1e;
-  max-width: 1000px;
 }
 
 .main__middle-nav-top {
-  width: 59%;
+  width: 71.5%;
   height: 50px;
   overflow: hidden;
   background-color: #1f1e1e;
@@ -163,7 +162,7 @@
 
 .main__left-middle-nav-right {
   grid-column: 2/3;
-  width: 60%;
+  width: 77%;
   height: 100px;
   overflow: hidden;
   display: flex;
@@ -199,6 +198,7 @@
 
 .main__middle-nav--sticky {
   background: linear-gradient(dimgray, #1f1e1e);
+  opacity: 1;
   height: 120px;
   padding-top: 70px;
   position: -webkit-sticky;
