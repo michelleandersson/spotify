@@ -259,7 +259,7 @@ $middle-color:rgb(39, 39, 39);
     margin-left: 0px;
 }
 
-.main__grid { /*fix the scroll bar and that the grid does not go all the way down*/
+.main__grid {
     max-height: 550px;
     height: 100%;
     display: grid;
@@ -270,6 +270,7 @@ $middle-color:rgb(39, 39, 39);
     margin-right: 20px;
     margin-bottom: 100px;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 .main__grid-genre {
@@ -476,8 +477,11 @@ $middle-color:rgb(39, 39, 39);
     }
 }
 
-.play-button {
+.play-button { /*fix so play and pause overlap and switch with click*/
     font-size: 40px;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .middle__bottom {
