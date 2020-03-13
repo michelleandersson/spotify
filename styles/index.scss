@@ -2,6 +2,7 @@ $main-font: 'Montserrat', sans-serif;
 $side-color: rgb(31, 30, 30); 
 $text-color: rgb(168, 166, 166); 
 $hover-text-color: rgb(255, 255, 255); 
+$player-color: rgb(39, 39, 39);
 
 .main {
     width: 100%;
@@ -9,14 +10,15 @@ $hover-text-color: rgb(255, 255, 255);
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 9fr 1fr;
 }
 
 .main__left {
     background-color: $side-color;
     grid-column: 1/2;
     width: 15%;
-    height: 100vh;
-    
+    max-height: 745px;
+    height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -122,6 +124,8 @@ $hover-text-color: rgb(255, 255, 255);
 .main__middle {
     grid-column: 2/3;
     background-color: $side-color;
+    max-height: 745px;
+    height: 100%;
 }
 
 .main__middle-nav-top {
@@ -135,7 +139,7 @@ $hover-text-color: rgb(255, 255, 255);
     align-items: flex-start;
     flex-direction: row;
     padding-top: 10px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .back-icon {
@@ -253,7 +257,8 @@ $hover-text-color: rgb(255, 255, 255);
 }
 
 .main__grid { /*fix the scroll bar and that the grid does not go all the way down*/
-    height: 100vh;
+    max-height: 550px;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -315,7 +320,8 @@ $hover-text-color: rgb(255, 255, 255);
     background-color: $side-color;
     grid-column: 3/4;
     width: 15%;
-    height: 100vh;
+    max-height: 745px;
+    height: 100%;
     
     display: flex;
     justify-content: flex-start;
@@ -360,9 +366,13 @@ $hover-text-color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 5px;
+    &:hover {
+        text-decoration: underline;
+        color: $hover-text-color;
+    }
 }
 
-.friend-icon {
+.friend-icon { /*add play button hover to faces*/ 
     color: $hover-text-color;
     font-size: 40px;
 }
@@ -372,6 +382,10 @@ $hover-text-color: rgb(255, 255, 255);
     font-family: $main-font;
     font-size: 15px;
     line-height: 1.5;
+    &:hover {
+        text-decoration: underline;
+        color: $hover-text-color;
+    }
 }
 
 .friend__button {
@@ -388,4 +402,18 @@ $hover-text-color: rgb(255, 255, 255);
     &:hover {
         transform: scale(1.2);
     }
+}
+
+.player {
+    background-color: $player-color;
+    width: 100%;
+    grid-row: 2/3;
+    grid-column: 1/4;
+    z-index: 1;
+    
+}
+
+.play-button {
+    font-size: 40px;
+    color: $hover-text-color;
 }

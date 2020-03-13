@@ -4,13 +4,15 @@
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 9fr 1fr;
 }
 
 .main__left {
   background-color: #1f1e1e;
   grid-column: 1/2;
   width: 15%;
-  height: 100vh;
+  max-height: 745px;
+  height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -116,6 +118,8 @@
 .main__middle {
   grid-column: 2/3;
   background-color: #1f1e1e;
+  max-height: 745px;
+  height: 100%;
 }
 
 .main__middle-nav-top {
@@ -129,7 +133,7 @@
   align-items: flex-start;
   flex-direction: row;
   padding-top: 10px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .back-icon {
@@ -249,7 +253,8 @@
 
 .main__grid {
   /*fix the scroll bar and that the grid does not go all the way down*/
-  height: 100vh;
+  max-height: 550px;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(10, 1fr);
@@ -311,7 +316,8 @@
   background-color: #1f1e1e;
   grid-column: 3/4;
   width: 15%;
-  height: 100vh;
+  max-height: 745px;
+  height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -354,8 +360,13 @@
   font-weight: bold;
   margin-bottom: 5px;
 }
+.friend__title:hover {
+  text-decoration: underline;
+  color: white;
+}
 
 .friend-icon {
+  /*add play button hover to faces*/
   color: white;
   font-size: 40px;
 }
@@ -365,6 +376,10 @@
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   line-height: 1.5;
+}
+.friend__text:hover {
+  text-decoration: underline;
+  color: white;
 }
 
 .friend__button {
@@ -381,4 +396,17 @@
 }
 .friend__button:hover {
   transform: scale(1.2);
+}
+
+.player {
+  background-color: #272727;
+  width: 100%;
+  grid-row: 2/3;
+  grid-column: 1/4;
+  z-index: 1;
+}
+
+.play-button {
+  font-size: 40px;
+  color: white;
 }
