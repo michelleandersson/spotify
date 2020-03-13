@@ -366,6 +366,7 @@
 .friend__title:hover {
   text-decoration: underline;
   color: white;
+  cursor: pointer;
 }
 
 .friend-icon {
@@ -383,6 +384,7 @@
 .friend__text:hover {
   text-decoration: underline;
   color: white;
+  cursor: pointer;
 }
 
 .friend__button {
@@ -447,4 +449,57 @@
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   margin-top: 10px;
+}
+
+.middle__top {
+  display: flex;
+  justify-content: center;
+}
+
+.player-button {
+  background: #414040;
+  color: #a8a6a6;
+  font-size: 20px;
+  border: none;
+  outline: #414040;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+.player-button:hover {
+  color: white;
+}
+
+.play-button {
+  font-size: 40px;
+}
+
+.middle__bottom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.time {
+  color: #a8a6a6;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+}
+
+.timelapse {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #a8a6a6;
+  color: #a8a6a6;
+  height: 8px;
+  width: 100%;
+  border-bottom: none;
+}
+.timelapse:hover {
+  background-color: #06be06;
+}
+
+.player__right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
