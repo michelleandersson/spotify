@@ -510,3 +510,16 @@ $middle-color:rgb(39, 39, 39);
     justify-content: flex-end;
     align-items: center;
 }
+
+.volume {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: $text-color;
+    color: $text-color;
+    height: 8px;
+    width: 20%;
+    border-bottom: none;
+    &:hover {
+        background-color: rgb(6, 190, 6);
+    }
+}

@@ -503,3 +503,16 @@
   justify-content: flex-end;
   align-items: center;
 }
+
+.volume {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #a8a6a6;
+  color: #a8a6a6;
+  height: 8px;
+  width: 20%;
+  border-bottom: none;
+}
+.volume:hover {
+  background-color: #06be06;
+}
