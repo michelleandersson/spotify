@@ -415,11 +415,44 @@ $middle-color:rgb(39, 39, 39);
     grid-column: 1/4;
     z-index: 1;
     display: grid;
-
-    
+    grid-template-columns: 1fr 2fr 1fr;  
 }
 
-.play-button {
-    font-size: 40px;
+.player__left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.album-img {
+    max-width: 80px;
+    width: 100%;
+    margin-top:10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.album {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.album-song {
     color: $hover-text-color;
+    font-family: $main-font;
+    font-size: 15px;
+    font-weight: bold;
 }
+
+.album-name {
+    color: $text-color;
+    font-family: $main-font;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
