@@ -477,7 +477,14 @@ $middle-color:rgb(39, 39, 39);
     }
 }
 
-.play-button { /*fix so play and pause overlap and switch with click*/
+.play-button { 
+    font-size: 40px;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.pause-button { 
     font-size: 40px;
     &:hover {
         transform: scale(1.1);

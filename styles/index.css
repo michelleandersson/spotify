@@ -470,10 +470,16 @@
 }
 
 .play-button {
-  /*fix so play and pause overlap and switch with click*/
   font-size: 40px;
 }
 .play-button:hover {
+  transform: scale(1.1);
+}
+
+.pause-button {
+  font-size: 40px;
+}
+.pause-button:hover {
   transform: scale(1.1);
 }
 
