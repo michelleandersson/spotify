@@ -2,7 +2,8 @@ $main-font: 'Montserrat', sans-serif;
 $side-color: rgb(31, 30, 30); 
 $text-color: rgb(168, 166, 166); 
 $hover-text-color: rgb(255, 255, 255); 
-$player-color: rgb(39, 39, 39);
+$player-color: rgb(65, 64, 64);
+$middle-color:rgb(39, 39, 39);
 
 .main {
     width: 100%;
@@ -10,13 +11,14 @@ $player-color: rgb(39, 39, 39);
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 9fr 1fr;
+    grid-template-rows: 5fr 1fr;
 }
 
 .main__left {
     background-color: $side-color;
     grid-column: 1/2;
-    width: 15%;
+    grid-row: 1/2;
+    width: 14.3%;
     max-height: 745px;
     height: 100%;
     display: flex;
@@ -123,13 +125,14 @@ $player-color: rgb(39, 39, 39);
 
 .main__middle {
     grid-column: 2/3;
-    background-color: $side-color;
+    grid-row: 1/2;
+    background-color: $middle-color;
     max-height: 745px;
     height: 100%;
 }
 
 .main__middle-nav-top {
-    width: 70.75%;
+    width: 71.4%;
     height: 50px;
     overflow: hidden;
     background-color: $side-color;
@@ -319,7 +322,8 @@ $player-color: rgb(39, 39, 39);
 .main__right {
     background-color: $side-color;
     grid-column: 3/4;
-    width: 15%;
+    grid-row: 1/2;
+    width: 14.3%;
     max-height: 745px;
     height: 100%;
     
@@ -410,6 +414,8 @@ $player-color: rgb(39, 39, 39);
     grid-row: 2/3;
     grid-column: 1/4;
     z-index: 1;
+    display: grid;
+
     
 }
 

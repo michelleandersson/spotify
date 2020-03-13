@@ -4,13 +4,14 @@
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 9fr 1fr;
+  grid-template-rows: 5fr 1fr;
 }
 
 .main__left {
   background-color: #1f1e1e;
   grid-column: 1/2;
-  width: 15%;
+  grid-row: 1/2;
+  width: 14.3%;
   max-height: 745px;
   height: 100%;
   display: flex;
@@ -117,13 +118,14 @@
 
 .main__middle {
   grid-column: 2/3;
-  background-color: #1f1e1e;
+  grid-row: 1/2;
+  background-color: #272727;
   max-height: 745px;
   height: 100%;
 }
 
 .main__middle-nav-top {
-  width: 70.75%;
+  width: 71.4%;
   height: 50px;
   overflow: hidden;
   background-color: #1f1e1e;
@@ -315,7 +317,8 @@
 .main__right {
   background-color: #1f1e1e;
   grid-column: 3/4;
-  width: 15%;
+  grid-row: 1/2;
+  width: 14.3%;
   max-height: 745px;
   height: 100%;
   display: flex;
@@ -399,11 +402,12 @@
 }
 
 .player {
-  background-color: #272727;
+  background-color: #414040;
   width: 100%;
   grid-row: 2/3;
   grid-column: 1/4;
   z-index: 1;
+  display: grid;
 }
 
 .play-button {
