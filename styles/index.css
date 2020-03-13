@@ -1,5 +1,7 @@
 .main {
   width: 100%;
+  height: 100vh;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
 }
@@ -117,7 +119,7 @@
 }
 
 .main__middle-nav-top {
-  width: 71.5%;
+  width: 70.75%;
   height: 50px;
   overflow: hidden;
   background-color: #1f1e1e;
@@ -162,7 +164,7 @@
 
 .main__left-middle-nav-right {
   grid-column: 2/3;
-  width: 77%;
+  width: 70%;
   height: 100px;
   overflow: hidden;
   display: flex;
@@ -246,13 +248,16 @@
 }
 
 .main__grid {
+  /*fix the scroll bar and that the grid does not go all the way down*/
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(10, 1fr);
   grid-gap: 15px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 90px;
+  margin-bottom: 100px;
+  overflow: scroll;
 }
 
 .main__grid-genre {
@@ -300,4 +305,80 @@
 
 .red {
   background: linear-gradient(#f34242, #830202);
+}
+
+.main__right {
+  background-color: #1f1e1e;
+  grid-column: 3/4;
+  width: 15%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+.main__right-title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #a8a6a6;
+  margin-top: 60px;
+  margin-left: 15px;
+}
+
+.friend {
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.friend__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+
+.friend__title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.friend-icon {
+  color: white;
+  font-size: 40px;
+}
+
+.friend__text {
+  color: #a8a6a6;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.friend__button {
+  background-color: #1f1e1e;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.friend__button:hover {
+  transform: scale(1.2);
 }
