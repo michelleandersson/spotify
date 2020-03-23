@@ -35,6 +35,9 @@ $middle-color:rgb(39, 39, 39);
     color: $text-color;
     margin-top: 10px;
     margin-left: 10px;
+    &:hover {
+        color: $hover-text-color;
+    }
 }
 
 .nav__top {
@@ -182,7 +185,7 @@ $middle-color:rgb(39, 39, 39);
     overflow: hidden;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-start;
+    align-items: baseline;
 }
 
 .profile {
@@ -191,6 +194,9 @@ $middle-color:rgb(39, 39, 39);
     font-family: $main-font;
     font-size: 15px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+
     &:hover {
         color: $hover-text-color;
         text-decoration: underline;
@@ -199,13 +205,13 @@ $middle-color:rgb(39, 39, 39);
 
 .profile-pic {
     font-size: 40px;
+    padding-right: 10px;
 }
 
 .down-icon {
     font-size: 25px;
     color: $text-color;
     margin-left: 5px;
-    margin-top: 15px;
     &:hover {
         color: $hover-text-color;
     }
