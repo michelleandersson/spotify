@@ -260,7 +260,7 @@ $middle-color:rgb(39, 39, 39);
 }
 
 .main__grid {
-    max-height: 550px;
+    max-height: 463px;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -378,7 +378,7 @@ $middle-color:rgb(39, 39, 39);
     }
 }
 
-.friend-icon { /*add play button hover to faces*/ 
+.friend-icon {
     color: $hover-text-color;
     font-size: 40px;
 }
@@ -419,6 +419,8 @@ $middle-color:rgb(39, 39, 39);
     z-index: 1;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;  
+    position: absolute;
+    bottom: 0;
 }
 
 .player__left {
